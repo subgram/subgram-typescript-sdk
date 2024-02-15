@@ -33,7 +33,7 @@ If your Telegram bot is built with `telegraf.js`, you can integrate Subgram API 
 
 ```typescript
 import Subgram from "subgram-sdk";
-import { Telegraf, Context } from "telegraf";
+import { Telegraf, Context, Markup } from "telegraf";
 
 const SUBGRAM_PRODUCT_ID = <YOUR_PRODUCT_ID>;
 
