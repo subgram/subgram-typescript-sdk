@@ -2,8 +2,14 @@
   "name": "@subgram/sdk",
   "version": "0.0.1",
   "description": "TypeScript SDK for Subgram – subscriptions for Telegram mini-apps and bots.",
-  "main": "src/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -31,6 +37,7 @@
   "devDependencies": {
     "@types/node": "^20.11.18",
     "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
     "typescript": "^5.3.3"
   }
 }

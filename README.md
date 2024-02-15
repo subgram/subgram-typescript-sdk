@@ -68,3 +68,11 @@ bot.action("SUBSCRIBE", async (ctx: Context) => {
   }
 })
 ```
+
+## Contributing
+We welcome contributions to Subgram SDK. Please fork this repository, make your changes, and open a pull request.
+
+You can install the dependencies using `bun` and `node 18+`:
+```bash
+bun install
+```
