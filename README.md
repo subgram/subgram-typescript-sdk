@@ -3,21 +3,21 @@
 ## Installation
 For npm users
 ```bash
-npm install @subgram/sdk
+npm install subgram-sdk
 ```
 For yarn users
 ```bash
-yarn add @subgram/sdk
+yarn add subgram-sdk
 ```
 For bun users
 ```bash
-bun install @subgram/sdk
+bun install subgram-sdk
 ```
 
 ## Usage
 Get your Subgram API token and create a new instance of Subgram API class 
 ```typescript
-import Subgram from "@subgram/sdk"
+import Subgram from "subgram-sdk"
 
 if (!process.env.SUBGRAM_API_TOKEN) {
   throw new Error("SUBGRAM_API_TOKEN is not defined");
@@ -32,7 +32,7 @@ export const SubgramAPI = new Subgram(process.env.SUBGRAM_API_TOKEN!);
 If your Telegram bot is built with `telegraf.js`, you can integrate Subgram API with your bot using this example:
 
 ```typescript
-import Subgram from "@subgram/sdk";
+import Subgram from "subgram-sdk";
 import { Telegraf, Context } from "telegraf";
 
 const SUBGRAM_PRODUCT_ID = <YOUR_PRODUCT_ID>;
@@ -75,4 +75,17 @@ We welcome contributions to Subgram SDK. Please fork this repository, make your 
 You can install the dependencies using `bun` and `node 18+`:
 ```bash
 bun install
+```
+Then to build the package in the `./dist` folder, run:
+```bash
+bun run build
+```
+You can also link the package and test it locally in another project.
+In this package directory run:
+```bash
+bun link
+```
+In another project's directory run:
+```bash
+bun link subgram-sdk
 ```

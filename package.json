@@ -1,5 +1,5 @@
 {
-  "name": "@subgram/sdk",
+  "name": "subgram-sdk",
   "version": "0.0.1",
   "description": "TypeScript SDK for Subgram – subscriptions for Telegram mini-apps and bots.",
   "main": "./dist/index.js",
